@@ -19,7 +19,7 @@ resource "aws_instance" "challenger_ec2" {
   instance_type = "t2.small" # used this because t2.micro is too small - necessary 2GBi RAM
   key_name = "tf-key" # key to access
   subnet_id = var.challenger_subnet_public_id
-  vpc_security_group_ids = [aws_security_group.inbound_outbound_rules.id]
+  vpc_security_group_ids = [aws_security_group.connection_rules.id]
   associate_public_ip_address = true
   user_data = "${file("config-ec2.sh")}" # file to install devtools
   tags = {
