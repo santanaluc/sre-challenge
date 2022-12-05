@@ -38,13 +38,15 @@ spec:
               containerPort: 80
               protocol: TCP
           livenessProbe:
+            initialDelaySeconds: 20 # delay to stop premature restart of pod
             httpGet:
               path: /
-              port: http
+              port: 8080 # add this port at inbound rules
           readinessProbe:
+            initialDelaySeconds: 20 # delay to stop premature restart of pod
             httpGet:
               path: /
-              port: http
+              port: 8080 # add this port at inbound rules
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
