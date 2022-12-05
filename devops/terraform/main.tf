@@ -37,8 +37,8 @@ variable "challenger_subnet_public_id" {
 }
 
 # Security group to access
-resource "aws_security_group" "inbound_outbound_rules" {
-  name        = "inbound_outbound_rules"
+resource "aws_security_group" "connection_rules" {
+  name        = "connection_rules"
   description = "Firewall rules"
   vpc_id      = var.challenger_vpc_id
 
