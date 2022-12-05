@@ -2,10 +2,6 @@
 
 Step to step to create EC2 machine with this repository
 
-## Files
-
-Montar estrutura do diretório
-
 ## Installation
 
 [Click here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) to see how to install in your SO.
