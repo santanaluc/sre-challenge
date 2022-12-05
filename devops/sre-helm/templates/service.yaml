@@ -7,8 +7,9 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - port: {{ .Values.service.targetPort }} # Port on pod selected by this service expose
+      targetPort: {{ .Values.service.targetPort }} # Port on pod selected by this service expose
+      nodePort: {{ .Values.service.nodePort }} # Port on the node where service is available 
       protocol: TCP
       name: http
   selector:
