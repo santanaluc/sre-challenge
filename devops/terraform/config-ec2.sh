@@ -38,8 +38,8 @@ nodes:
     hostPort: 80
 EOF
 sleep 5
-sudo /usr/local/bin/kind create cluster --config /home/ec2-user/create-cluster.yaml 2> /home/ec2-user/log.txt
+sudo /usr/local/bin/kind create cluster --config /home/ec2-user/create-cluster.yaml 2> /home/ec2-user/logs/log.txt
 sleep 10
 # Add this to resolve the problem of "The connection to the server localhost:8080 was refused - did you specify the right host or port?"
-sudo mkdir /home/ec2-user/.kube 2> /home/ec2-user/logmkdir.txt
-sudo /usr/local/bin/kind get kubeconfig > /home/ec2-user/.kube/config 2> /home/ec2-user/logkind.txt
+sudo mkdir /home/ec2-user/.kube 2> /home/ec2-user/logs/logmkdir.txt
+sudo /usr/local/bin/kind get kubeconfig > /home/ec2-user/.kube/config 2> /home/ec2-user/logs/logkind.txt
