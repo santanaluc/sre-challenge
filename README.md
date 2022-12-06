@@ -8,14 +8,14 @@ Temos neste repositório uma aplicação em Java com uma API REST que responde u
 
 ## Tarefas: 
 
-* Containerize essa aplicação. 
-* Crie um Helm chart contendo todos os componentes necessários para essa aplicação rodar em um cluster de Kubernetes
-* Crie uma instância EC2 utilizando um template de AWS CloudFormation ou Terraform.
-* Acesse a instância EC2 criada e instale os componentes necessários para você subir a aplicação em um cluster Kubernetes (pode user o minikube).
-* Aplique o chart criado e valide o funcionamento da aplicação.
+* US001 - Containerize essa aplicação. 
+* US002 - Crie um Helm chart contendo todos os componentes necessários para essa aplicação rodar em um cluster de Kubernetes
+* US003 - Crie uma instância EC2 utilizando um template de AWS CloudFormation ou Terraform.
+* US004 - Acesse a instância EC2 criada e instale os componentes necessários para você subir a aplicação em um cluster Kubernetes (pode user o minikube).
+* US005 - Aplique o chart criado e valide o funcionamento da aplicação.
 
 Tarefa bônus - não obrigatória - apenas será um diferencial na sua entrega.
-* Crie uma pipeline com AWS CodePipeline para automatizar a execução destes passos e subir essa infraestrutura na AWS.
+* USBONUS - Crie uma pipeline com AWS CodePipeline para automatizar a execução destes passos e subir essa infraestrutura na AWS.
 
 ## Alguma dicas que podem ser importantes:
 * Qualidade da documentacão
