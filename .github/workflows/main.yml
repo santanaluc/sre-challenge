@@ -37,7 +37,7 @@ jobs:
         - name: Deploy to my EC2 instance
           uses: appleboy/ssh-action@master
           with:
-            host: "ec2-100-26-11-207.compute-1.amazonaws.com"
+            host: ${{ secrets.AWS_HOST_KEY }}
             username: "ec2-user"
             key: ${{ secrets.EC2_SSH_KEY }}
             script: |
