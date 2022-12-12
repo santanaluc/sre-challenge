@@ -8,6 +8,6 @@ public class AppAController {
 
 	@GetMapping(path = "/")
 	public String helloWorld() {
-		return "{\"message\":\"Hello World!\"}";
+		return "{\"message\":\"Ola mundo!\"}";
 	}
 }
